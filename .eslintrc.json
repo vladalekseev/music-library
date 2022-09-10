@@ -17,13 +17,6 @@
     "sourceType": "module"
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "camelcase": "error",
-    "spaced-comment": "error",
-    "quotes": ["error", "single"],
-    "no-duplicate-imports": "error"
-  },
   "settings": {
     "import/resolver": {
       "alias": {
@@ -38,5 +31,14 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "quotes": ["error", "single"],
+    "no-duplicate-imports": "error",
+    "no-console": "warn"
   }
 }

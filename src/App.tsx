@@ -1,4 +1,4 @@
-import MusicLibraryContainer from './features/music-library/MusicLibraryContainer/MusicLibraryContainer';
+import MusicLibraryContainer from './features/music-library/components/MusicLibraryContainer/MusicLibraryContainer';
 
 function App() {
   return <MusicLibraryContainer />;

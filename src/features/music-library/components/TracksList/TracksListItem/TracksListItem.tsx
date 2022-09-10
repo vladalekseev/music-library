@@ -1,5 +1,5 @@
 import { Track } from '@models/Track';
-import { ListItem } from './TracksListItem.styles';
+import { ArtistName, ListItem, TrackName } from './TracksListItem.styles';
 
 export interface TracksListItemProps {
   track: Track;
@@ -12,8 +12,8 @@ const TracksListItem = ({ track, isSelected, onClick }: TracksListItemProps) => 
     <ListItem isSelected={isSelected} onClick={() => onClick(track)}>
       <img src={track.cover} />
       <div>
-        <div>{track.name}</div>
-        <div>{track.artist}</div>
+        <TrackName>{track.name}</TrackName>
+        <ArtistName>{track.artist}</ArtistName>
       </div>
     </ListItem>
   );
